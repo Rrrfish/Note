@@ -62,7 +62,19 @@
 
 在运行的容器中执行命令
 
-示例1
+
+
+#### 示例1（打开正在后台运行的容器终端）
+
+```shell
+docker exec -it [容器ID或名称] /bin/bash
+```
+
+如果对应容器中没有`/bash`，可以换成`/sh`。
+
+
+
+示例2
 
 ```shell
 $ docker exec -it mynginx /bin/sh /root/runoob.sh
